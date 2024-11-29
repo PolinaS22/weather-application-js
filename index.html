@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="big-container">
+        <div class="input-container">
+            <input id="input" type="text" spellcheck="false" placeholder="Please enter city...">
+            <button id="btn">⌕</button>
+        </div>
+        <div class="container-data hiddenBox">
+            <div class="cityDateTemp">
+                <div class="container-temp">
+                    <p id="temperature"></p>                
+                </div>
+                <div class="container-datePlace">
+                    <p id="date"></p>
+                    <p id="city"></p>
+                </div>
+            </div>
+            <div id="container-showMore">
+                <button class="hiddenBtn" id="btnShow">Details</button>
+            </div>
+            <div class="extraInfo">
+                <p class="spaceBetween"><span class="italic">Feels like</span><span id="feelsLike"></span></p>
+                <p class="spaceBetween"><span class="italic">Temp variation: </span><span id="minMax"></span></p>
+                <p class="spaceBetween"><span class="italic">Humidity:</span><span id="humidity"></span></p>
+                <p class="spaceBetween"><span class="italic">Description:</span><span id="description"></span></p>
+                <p class="spaceBetween"><span class="italic">Wind speed:</span><span id="windSpeed"></span></p>
+            </div>
+        </div>  
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
